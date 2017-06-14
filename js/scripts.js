@@ -3,24 +3,18 @@ $(document).ready(function() {
   $("#blanks form").submit(function(event) {
 
     var funnySentence = $("input#sentence").val();
-    // var space = ' ';
-    // splitString(funnySentence, space);
-
-    $(".sentence").text(funnySentence);
-
+    var strReverse = funnySentence.split("").reverse("").join(""); // 'lkjhgfdsa'
+    var allCaps = strReverse.toUpperCase("");
+    $(".sentence").text(allCaps);
 
 
-    //   groceries.forEach(function(grocery) {
-    //     var userInput = $("input#" + grocery).val();
-    //     console.log(grocery);
-    //       // groceries.sort();
-    //     $("." + grocery).text(userInput)
-    //  });
 
-// Below are things I need to
 
-        //  $("form").hide();
-         //
+// Below are things I need to do:
+
+// str.split([separator[, limit]])
+// arr.join(separator)
+
          $("#sentenceMade").show();
 
 
